@@ -1,9 +1,7 @@
 const Product = require('../models/Product');
-const Category = require('../models/Category'); // Make sure Category model is accessible
+const Category = require('../models/Category'); 
 
-// @desc    Get all products
-// @route   GET /api/products
-// @access  Public
+
 const getProducts = async (req, res) => {
   try {
     const products = await Product.find({})
